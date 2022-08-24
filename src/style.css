@@ -281,12 +281,45 @@ body{
     transform: scale(1.1);
 }
 
+/* About page */
+.about-section{
+    padding-top: 3rem;
+}
 
+.about-content{
+    margin-top: 4rem;
+}
+
+.about-greeting{
+    font-size: 4rem;
+    color: var(--secondary-text-color);
+}
+
+.about-description{
+    margin-top: 2rem;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+}
+
+.about-photo{
+    border-radius: 1.25rem;
+}
 
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
   .waves {
-    height:70px;
+    height:150px;
     min-height:40px;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  p{
+    font-size: 1rem;
+  }
+  .about-content{
+    text-align: center;
   }
 }
