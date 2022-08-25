@@ -13,6 +13,10 @@ a {
     color: inherit;
 }
 
+a:hover{
+    color: inherit;
+}
+
 ul,
 ol,
 li {
@@ -142,6 +146,7 @@ body{
     font-size: 1.25rem;
     color: var(--white-color);
     background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
     border-radius: 5px;
     padding: 18px 40px;
     cursor: pointer;
@@ -151,7 +156,6 @@ body{
 .main-button:hover{
     color: var(--primary-color);
     background-color: var(--white-color);
-    border: 1px solid var(--primary-color);
 }
 
 .secondary-button{
@@ -274,11 +278,80 @@ body{
 }
 
 .card-image{
+    border-radius: 1rem;
     transition: transform .75s;
 }
 
 .card-image:hover{
     transform: scale(1.1);
+}
+
+/* footer */
+.footer{
+    margin-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.footer-inquiry{
+    background-color: var(--secondary-color);
+    border-radius: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.inquiry-heading{
+    font-size: 1.75rem;
+    color:var(--secondary-text-color);
+}
+
+.inquiry-description{
+    margin-top: 1rem;
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+}
+
+.footer-mail{
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.mail-link{
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.mail-link:hover{
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+
+.footer-social{
+    margin-top: 4rem;
+    text-align: center;
+    color: var(--primary-color);
+    margin-right: 2rem;
+    font-size: 2.5rem;
+}
+
+.social-link{
+    transition: all 0.3s ease-in-out;
+}
+
+.social-link:hover{
+    opacity: 0.5;
+}
+
+.social-link:not(:last-child){
+    margin-right: 1.5rem;
+}
+
+.social-icon{
+    color: var(--primary-color);
 }
 
 /* About page */
@@ -290,7 +363,7 @@ body{
     margin-top: 4rem;
 }
 
-.about-greeting{
+.heading{
     font-size: 4rem;
     color: var(--secondary-text-color);
 }
@@ -307,7 +380,7 @@ body{
     border-radius: 1.25rem;
 }
 
-/*Shrinking for mobile*/
+/*Adaptive*/
 @media (max-width: 768px) {
   .waves {
     height:150px;
