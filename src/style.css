@@ -100,6 +100,7 @@ body{
 }
 
 .list-item{
+    display: inline-block;
     color: var(--secondary-text-color);
     transition: all 0.3s ease-in-out;
 }
@@ -139,10 +140,10 @@ body{
     font-size: 1.5rem;
     color: var(--secondary-text-color);
     opacity: 0.7;
+    margin-bottom: 4rem;
 }
 
 .main-button{
-    margin-top: 4rem;
     font-size: 1.25rem;
     color: var(--white-color);
     background-color: var(--primary-color);
@@ -275,6 +276,11 @@ body{
 .portfolio-heading{
     font-size: 1.75rem;
     color:var(--secondary-text-color);
+    margin: 2rem 0;
+}
+
+.portfolio-card{
+    margin: 1.5rem 0;
 }
 
 .card-image{
@@ -384,6 +390,12 @@ body{
     border-radius: 1.25rem;
 }
 
+/* Contacts */
+.contacts-block{
+    text-align: center;
+    margin-top: 6rem;
+}
+
 /*Adaptive*/
 @media (max-width: 768px) {
   .waves {
@@ -396,9 +408,20 @@ body{
   p{
     font-size: 1rem;
   }
+
   .portfolio-heading{
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+    text-align: center;
   }
+
+  .hero-list{
+    text-align: center;
+  }
+
+ .project-container{
+    text-align: center;
+ }
+
   .footer-inquiry{
     text-align: center;
     flex-direction: column;
@@ -411,4 +434,5 @@ body{
   .about-content{
     text-align: center;
   }
+
 }
