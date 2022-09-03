@@ -360,6 +360,17 @@ body{
     color: var(--primary-color);
 }
 
+.footer-link{
+    text-align: center;
+    font-size: 1rem;
+    color: var(--primary-color);
+    margin-top: 7rem;
+}
+
+.footer-link:hover{
+    text-decoration: underline;
+}
+
 /* About page */
 .main-navigation{
     margin-top: 3rem;
